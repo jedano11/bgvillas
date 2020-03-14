@@ -1,9 +1,4 @@
-<?php
-
-get_header(); ?>
-
-
-
+<?php get_header(); ?>
 
 <!-- Start Our Services section -->
 <section class="home-services ptpx-80 ">
@@ -17,15 +12,6 @@ get_header(); ?>
                 </div>     
             </div>
             <?php endwhile; ?>
-
-
-
-            <!-- 1. Add latest jQuery and fancyBox files -->
-
-			<!-- <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> -->
-
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
 
             <?php
             $args = array( 
