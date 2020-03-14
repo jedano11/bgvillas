@@ -5,10 +5,10 @@
 get_header(); ?>
 
 <div class="hidden-xs-down">
-<?php echo do_shortcode('[metaslider id="6"]'); ?>
+<?php echo do_shortcode('[metaslider id="26"]'); ?>
 </div>
 <div class="hidden-sm-up">
-<?php echo do_shortcode('[metaslider id="13"]'); ?>
+<?php echo do_shortcode('[metaslider id="33"]'); ?>
 </div>
 <footer id="footer">
 
