@@ -1,0 +1,101 @@
+.btn{
+	padding: 14px 34px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	letter-spacing: 1px;
+	@include transition(0.4s ease);
+	border-radius: 2px;
+	cursor: pointer;	
+
+	&.\--large{
+		padding: 25px 45px;
+	}
+
+	&.\--small{
+		padding: 6px 26px;
+	}
+
+	&.\--normal{
+		padding: 8px 60px;
+	}
+
+	&:hover {
+		background: $theme-primary;
+		color: $theme-white;
+	}
+
+	&.btn-primary{
+		background-color: $theme-primary;
+		color: $theme-white;
+		&:hover{
+			background-color: rgba($theme-primary, 0.9);
+		}
+		&.\--outline{
+			background: none;
+			color: $theme-primary;
+			border: 2px solid $theme-primary;
+			&:hover{
+				background-color: $theme-primary;
+				color: $theme-white;
+			}
+		}
+		&.\--trans{
+			padding-left: 0px;
+			background-color: $theme-white;
+			color: $theme-primary;
+			&:hover{
+				background-color: $theme-primary;
+				color: $theme-white;
+				padding-left: 34px;
+			}
+		}
+	}
+
+	&.btn-bar{
+		padding: 0px;
+		border-bottom: 2px solid transparent;
+		&:hover {
+			background: transparent;
+			color: $theme-primary;
+			border-bottom: 2px solid $theme-blue;
+		}
+	}
+
+	&.btn-gradient{
+		// background-color: $theme-pink;
+		color: $theme-white;
+		text-transform: uppercase;
+		position: relative;
+		overflow: hidden;
+
+		&:before{
+			@include bg-gradient;
+			content: "";
+			left: 0;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			z-index: -1;
+		}
+		&:hover{
+			background-color: $theme-pink;
+			&:before{
+				transform: translate3d(-100%, 0, 0);
+			}
+		}
+	}
+
+	&.btn-secondary{
+		background-color: $theme-secondary;
+		color: $theme-white;
+		&:hover{
+			background-color: rgba($theme-secondary, 0.9);
+		}
+		&.\--outline{
+			background: none;
+			border: 2px solid $theme-secondary;
+		}
+	}
+}
