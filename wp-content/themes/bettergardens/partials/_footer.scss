@@ -1,0 +1,47 @@
+footer{
+	clear: both;
+
+	.copyright{
+    	
+    	span{
+    		font-weight:700;
+    		font-size:14px;
+    	}
+
+	}
+	
+	nav{
+
+		&.foot-nav{
+		  
+		  display: inline-block;
+
+		   li {
+		   	    font-size:12px;
+			    margin-right: 16px;
+			    position: relative;
+			    text-transform: uppercase;
+		          &:hover{
+		            
+			            a{
+			              color: $theme-primary;
+			            }
+		          }
+               }      
+		  
+	    }
+	}
+
+	.social-links{
+		    display: inline-block;
+
+		       li {
+		          &:hover{
+		            
+			            i{
+			              color: $theme-primary;
+			            }
+		          }
+               } 
+	}
+}

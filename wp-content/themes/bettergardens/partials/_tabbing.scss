@@ -1,0 +1,101 @@
+.about-tabbing{
+  .tabbing-link{
+    ul{
+      list-style: none;
+    }
+  }
+}
+
+
+
+.tab-content{
+  display: none;
+  &.current{
+    display: block;
+  }
+}
+
+.tabbing-link{
+  li{
+    &.current{
+      a{
+        background: $theme-primary;
+        color: #ffffff;
+        padding-left: 60px;
+        &:after{
+          border-left: 20px solid $theme-primary;
+        }
+        &:before{
+          left: 0;
+          position: absolute;
+          top: 0;
+          content: '';
+          width: 14px;
+          height: 99%;
+          background: $theme-secondary;
+        }
+
+        i{
+          left: 20px;
+        }
+      }
+    }
+    a{
+      font-size: 15px;
+      padding: 14px 0;
+      display: block;
+      border-bottom: 1px solid #e5e5e5;
+      padding-left: 34px;
+      position: relative;
+      transition: 0.4s ease;
+      &:after{
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-left: 20px solid #ffffff;
+        border-bottom: 25px solid transparent;
+        content: '';
+        position: absolute;
+        right: -20px;
+        top: 0;
+        transition: 0.4s ease;
+      }
+
+      i{
+        position: absolute;
+        left: 0;
+        top: 10px;
+        font-size: 30px;
+        transition: 0.4s ease;
+      }
+
+      &:hover{
+        background: $theme-primary;
+        color: #ffffff;
+        padding-left: 60px;
+        &:before{
+          left: 0;
+          position: absolute;
+          top: 0;
+          content: '';
+          width: 14px;
+          height: 99%;
+          background: $theme-secondary;
+        }
+        &:after{
+          border-left: 20px solid $theme-primary;
+        }
+
+        i{
+          left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.tab-content{
+  background-position: right top;
+  background-repeat: no-repeat;
+  padding-bottom: 40px;    
+}
