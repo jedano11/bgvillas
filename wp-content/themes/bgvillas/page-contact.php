@@ -25,7 +25,7 @@ get_header(); ?>
 			  <div class="col-md-1">
 			</div>
 			  <div class="col-md-10">
-				   <?php echo do_shortcode('[contact-form-7 id="77" title="Contact form"]'); ?>
+				   <?php echo do_shortcode('[contact-form-7 id="80" title="Contact form"]'); ?>
 
               </div> 
 
