@@ -1,9 +1,4 @@
-<?php
-
-get_header(); ?>
-
-
-
+<?php get_header(); ?>
 
 <!-- Start Our Services section -->
 <section class="home-services ptpx-80 ">
@@ -18,15 +13,6 @@ get_header(); ?>
             </div>
             <?php endwhile; ?>
 
-
-
-            <!-- 1. Add latest jQuery and fancyBox files -->
-
-			<!-- <script src="//code.jquery.com/jquery-3.3.1.min.js"></script> -->
-
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-
             <?php
             $args = array( 
                 'post_type' => 'portfolio',
@@ -34,10 +20,10 @@ get_header(); ?>
                 'orderby'   => 'ASC'
             );
             $loop = new WP_Query( $args );
-			$i = 0;
+            $i = 0;
             while ( $loop->have_posts() ) : $loop->the_post();
-			$i++;
-			?>
+            $i++;
+            ?>
                 <div class="col-md-3">
                     <div class="box portfolio-box">
                         <figure class="sec-padding bg-cover bg-norepeat" style="background-image: url(<?php the_post_thumbnail_url('full'); ?>);">
@@ -46,16 +32,16 @@ get_header(); ?>
                         <div class="gallery-section clearfix">
                             <?php 
                             $portfolio = get_field('portfolio');
-                            if( $portfolio ): ?>				    
+                            if( $portfolio ): ?>                    
                                     <?php 
-										foreach( $portfolio as $image ): ?>
+                                        foreach( $portfolio as $image ): ?>
                                         <div class="gallery-block">
                                            <a data-fancybox="gallery<?php echo $i;?>" class="view-btn" 
-					                           href="<?php echo $image['url']; ?>"> 
-											&nbsp; </a>
+                                               href="<?php echo $image['url']; ?>"> 
+                                            &nbsp; </a>
 
                                         </div>
-                                    <?php endforeach; ?>				    
+                                    <?php endforeach; ?>                    
                             <?php endif; ?>
                         </div>
 
