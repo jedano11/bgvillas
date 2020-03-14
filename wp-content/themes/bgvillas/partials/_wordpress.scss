@@ -1,0 +1,96 @@
+.page-id-33{
+	.inside-page{
+		background-color: $theme-silver;
+	}
+}
+
+.widgetized-sidebar{
+	// padding: 10px;
+	overflow: hidden;	
+
+	.sidebar-box{
+		margin-bottom: 20px;
+		border-radius: 6px;
+		border: 1px solid $theme-silver;
+		border-radius: 6px;
+		overflow: hidden;
+		.title{
+			text-transform: uppercase;
+			background-color: $theme-primary;
+			color: $theme-white;
+			padding: 10px 6px 10px 20px;
+			font-weight: $font-weight-normal;
+		    // margin-bottom: 20px;
+		}
+		.inner-content{
+			padding: 16px;
+
+			img{
+				margin: auto;
+			}
+			.gform_wrapper li.gfield{
+				padding-right: 0px;
+			}
+			.textarea{
+				height: 60px;
+			}
+		}
+	}
+	
+}
+
+.alignright {
+    float: right;
+}
+.aligncenter {
+    margin: auto;
+}
+
+ul{
+	padding-left: 20px;
+	li{
+		
+	}
+}
+
+form{
+	.gform_body{
+		input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+		select.gfield_select{
+			padding: 8px 8px;
+		}
+		.gfield_checkbox li,
+		.gfield_radio li{
+			label{
+				margin-top: 7px;
+			}
+			
+			input[type=radio],
+			input[type=checkbox]{
+				padding: 6px;
+				margin-top: 2px;
+				&:checked{
+					background-color: $theme-lg-grey;
+				}
+			}
+		}
+		li.gfield.gf_list_3col ul.gfield_checkbox li,
+		li.gfield.gf_list_3col ul.gfield_radio li{
+			min-height: auto;
+			vertical-align: middle;
+		}
+		.ginput_container_checkbox,
+		.ginput_container_radio{
+		    margin-top: 8px !important;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

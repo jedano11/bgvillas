@@ -1,0 +1,77 @@
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+
+
+$icon-font				: 	'FontAwesome';
+
+$font-special			: 	'Roboto', sans-serif;
+
+$base-font-family		:   'Roboto', sans-serif !default;
+$heading-font-family	:   'Roboto', sans-serif !default; 
+
+$base-line-height		: 	28px;
+
+/*** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.*/
+
+$base-font-size			: 	14px !default;
+$font-size-h1			: 	50px;
+$font-size-h2			: 	30px;
+$font-size-h3			: 	32px;
+$font-size-h4			: 	28px;
+$font-size-h5			: 	24px;
+$font-size-h6			: 	20px;
+
+$font-size-xsmall		: 	10px;
+$font-size-small		: 	12px;
+$font-size-xmedium		: 	14px;
+$font-size-medium		: 	16px;
+$font-size-large		: 	18px;
+
+$font-weight-black		: 	900;
+$font-weight-bold		: 	700;
+$font-weight-semi-bold	: 	600;
+$font-weight-normal		: 	400;
+$font-weight-light		: 	300;
+$font-weight-thin		: 	100;
+
+
+//== Color Variation
+//
+//## Text color, Background color, Border color.
+
+$theme-default	: 	#333333;
+$theme-white	: 	#ffffff;
+$theme-black	: 	#000000;
+$theme-silver	: 	#f1f1f1;
+$theme-grey		: 	#666666;
+$theme-lg-grey	: 	#f8f8f8;
+$theme-sp-grey	: 	#e9e9e9;
+$theme-dk-grey 	: 	#18191a;
+$theme-brown 	: 	#bcb6a3;
+$theme-l-grey 	: 	#76777A;
+
+
+
+// Theme Colors
+
+$theme-primary	: 	#23caf4;
+$theme-secondary: 	#c1c1c1;
+$theme-blue 	: 	#1f4e8b;
+$theme-pink		:	#e130a7;
+
+$link-color		: 	#333333;
+
+//== Sprite Path
+//
+
+$sprite-image			: 	"sprite.png";
+$media-basepath			: 	"images";
+$full-path				: 	"#{$media-basepath}/#{$sprite-image}";
+
+
+// Icon Fonts Path
+$icomoon-font-path: "assets-web/icon-fonts/fonts" !default;
