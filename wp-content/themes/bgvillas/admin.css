@@ -1,0 +1,33 @@
+.format-settings{	
+    float: left;    
+}
+.col-1-wrap {
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 20% !important;
+}
+.col-2-wrap {
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 30% !important;
+}
+.col-half-wrap{
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 46% !important;
+}
+.col-3-wrap {
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 60% !important;
+}
+.col-4-wrap {
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 80% !important;
+}
+.col-5-wrap {
+	padding-right: 15px;
+	padding-left: 15px;
+	width: 100% !important;
+}
